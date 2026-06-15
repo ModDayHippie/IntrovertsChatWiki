@@ -1,0 +1,305 @@
+# Automod message with stickied comment 
+type: submission
+action: approve
+comment: |
+    **Welcome to IntrovertsChat!**  
+    
+    This post has been automatically approved. 
+    This is a strictly SFW space for introverts. If you have an NSFW account, please refrain from participating.   
+    Please remember to follow our [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules) and be respectful to others.
+
+    **Join our Discord:**  [Click here to join](https://discord.gg/dFnMnKA4wt)
+
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Account age should be more than 5 days (posts)
+type: submission
+author:
+  account_age: < 5 days
+action: remove
+comment: |
+  comment: |
+  Hi, your submission has been removed because your account doesn't meet our minimum requirements yet.
+
+  To participate in r/IntrovertsChat, accounts must have:
+  - A verified email
+  - At least 50+ total karma
+  - An account age of 5 days or more
+
+  These safeguards help us keep the subreddit free from spam, fake profiles, and low-effort drive-by accounts. They make the space safer and more relaxed for everyone here.
+
+  You can check your karma and account age from your profile page:
+  - Mobile: Go to your profile -> About
+  - Desktop: Hover your mouse over your karma number
+
+  Once your account meets the requirements, you'll be able to post and comment normally in r/IntrovertsChat.
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Account age should be more than 5 days (comments)
+type: comment
+author:
+  account_age: < 5 days
+action: remove
+comment: |
+  comment: |
+  Hi, your submission has been removed because your account doesn't meet our minimum requirements yet.
+
+  To participate in r/IntrovertsChat, accounts must have:
+  - A verified email
+  - At least 50+ total karma
+  - An account age of 5 days or more
+
+  These safeguards help us keep the subreddit free from spam, fake profiles, and low-effort drive-by accounts. They make the space safer and more relaxed for everyone here.
+
+  You can check your karma and account age from your profile page:
+  - Mobile: Go to your profile -> About
+  - Desktop: Hover your mouse over your karma number
+
+  Once your account meets the requirements, you'll be able to post and comment normally in r/IntrovertsChat.
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Account should have more than 50 karma (SUBMISSION)
+type: submission
+author:
+  combined_karma: "< 50"
+action: remove
+comment: |
+  comment: |
+  Hi, your submission has been removed because your account doesn't meet our minimum requirements yet.
+
+  To participate in r/IntrovertsChat, accounts must have:
+  - A verified email
+  - At least 50+ total karma
+  - An account age of 5 days or more
+
+  These safeguards help us keep the subreddit free from spam, fake profiles, and low-effort drive-by accounts. They make the space safer and more relaxed for everyone here.
+
+  You can check your karma and account age from your profile page:
+  - Mobile: Go to your profile -> About
+  - Desktop: Hover your mouse over your karma number
+
+  Once your account meets the requirements, you'll be able to post and comment normally in r/IntrovertsChat.
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Account should have more than 50 karma (COMMENTS)
+type: comment
+author:
+  combined_karma: "< 50"
+action: remove
+comment: |
+  Hi, your comment has been removed because your account doesn't meet our minimum requirements yet.
+
+  To participate in r/IntrovertsChat, accounts must have:
+  - A verified email
+  - At least 50+ total karma
+  - An account age of 5 days or more
+
+  These safeguards help us keep the subreddit free from spam, fake profiles, and low-effort drive-by accounts. They make the space safer and more relaxed for everyone here.
+
+  You can check your karma and account age from your profile page:
+  - Mobile: Go to your profile -> About
+  - Desktop: Hover your mouse over your karma number
+
+  Once your account meets the requirements, you'll be able to post and comment normally in r/IntrovertsChat.
+comment_stickied: true
+comment_locked: true
+
+---
+
+# body should be more than 200 words
+type: text submission
+body_shorter_than: 200
+action: remove
+action_reason: body too short
+comment: |
+  Hi! Your post has been removed because it lacks effort.
+  Please include more detail about yourself, what you are looking for, or why you want to connect.
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Body must be more than 8 words
+type: comment
+body_shorter_than: 8
+is_top_level: true
+action: remove
+action_reason: comment too short
+comment: |
+  Hi! Your comment has been removed because it's too short to contribute meaningfully to the conversation.
+comment_locked: true
+
+---
+
+# Rule — Block dating/romance posts (SUBMISSIONS)
+type: submission
+title+body (regex): "(?i)(?=.*\\b(dating|date|relationship|romance|romantic(?: partner)?|boyfriend|girlfriend|gf|bf|fwb|hookup|hook up|one[-\\s]?night|partner|soulmate|crush|flirt(?:ing)?)\\b)(?=.*\\b(dm|pm|snap|add|whatsapp|telegram)\\b).*"
+action: remove
+comment: |
+  Your post has been removed because dating or romantic content is not allowed here. Please avoid mentioning dating, romance, or contact solicitations in future posts. This subreddit is not for dating. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Rule — Block dating/romance comments (COMMENTS)
+type: comment
+body (regex): "(?i)(?=.*\\b(dating|date|relationship|romance|romantic(?: partner)?|boyfriend|girlfriend|gf|bf|fwb|hookup|hook up|one[-\\s]?night|partner|soulmate|crush|flirt(?:ing)?)\\b)(?=.*\\b(dm|pm|snap|add|whatsapp|telegram)\\b).*"
+action: remove
+comment: |
+  Your comment has been removed because dating or romantic content is not allowed here. Please avoid mentioning dating, romance, or contact solicitations in future comments. This is not a dating-oriented subreddit. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Rule 1 — NSFW / Sexual Content (obfuscation-proof SUBMISSIONS)
+type: submission
+body (regex): ['a[\W_]*n[\W_]*a[\W_]*l','b[\W_]*d[\W_]*s[\W_]*m','b[\W_]*b[\W_]*c','b[\W_]*l[\W_]*o[\W_]*w[\W_]*j[\W_]*o[\W_]*b','b[\W_]*o[\W_]*o[\W_]*b[\W_]*s','b[\W_]*r[\W_]*a[\W_]*z[\W_]*z[\W_]*e[\W_]*r[\W_]*s','c[\W_]*a[\W_]*m[\W_]*g[\W_]*i[\W_]*r[\W_]*l','c[\W_]*a[\W_]*m[\W_]*\s*b[\W_]*o[\W_]*y','c[\W_]*a[\W_]*m[\W_]*\s*g[\W_]*i[\W_]*r[\W_]*l','c[\W_]*o[\W_]*c[\W_]*k','c[\W_]*u[\W_]*m','c[\W_]*u[\W_]*m[\W_]*m[\W_]*i[\W_]*n[\W_]*g','c[\W_]*u[\W_]*n[\W_]*n[\W_]*i[\W_]*l[\W_]*i[\W_]*n[\W_]*g[\W_]*u[\W_]*s','d[\W_]*e[\W_]*e[\W_]*p[\W_]*t[\W_]*h[\W_]*r[\W_]*o[\W_]*a[\W_]*t','d[\W_]*i[\W_]*l[\W_]*d[\W_]*o','d[\W_]*o[\W_]*m','d[\W_]*o[\W_]*m[\W_]*i[\W_]*n[\W_]*a[\W_]*t[\W_]*r[\W_]*i[\W_]*x','e[\W_]*r[\W_]*o[\W_]*t[\W_]*i[\W_]*c','e[\W_]*s[\W_]*c[\W_]*o[\W_]*r[\W_]*t','e[\W_]*x[\W_]*h[\W_]*i[\W_]*b[\W_]*i[\W_]*t[\W_]*i[\W_]*o[\W_]*n[\W_]*i[\W_]*s[\W_]*m','f[\W_]*a[\W_]*p','f[\W_]*e[\W_]*t[\W_]*i[\W_]*s[\W_]*h','f[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r[\W_]*i[\W_]*n[\W_]*g','f[\W_]*i[\W_]*s[\W_]*t[\W_]*i[\W_]*n[\W_]*g','f[\W_]*o[\W_]*o[\W_]*t[\W_]*j[\W_]*o[\W_]*b','g[\W_]*a[\W_]*n[\W_]*g[\W_]*b[\W_]*a[\W_]*n[\W_]*g','g[\W_]*i[\W_]*m[\W_]*p','g[\W_]*l[\W_]*o[\W_]*r[\W_]*y[\W_]*h[\W_]*o[\W_]*l[\W_]*e','g[\W_]*s[\W_]*p[\W_]*o[\W_]*t','h[\W_]*a[\W_]*n[\W_]*d[\W_]*j[\W_]*o[\W_]*b','h[\W_]*e[\W_]*n[\W_]*t[\W_]*a[\W_]*i','i[\W_]*n[\W_]*c[\W_]*e[\W_]*s[\W_]*t','j[\W_]*e[\W_]*r[\W_]*k[\W_]*o[\W_]*f[\W_]*f','k[\W_]*i[\W_]*n[\W_]*k','l[\W_]*a[\W_]*b[\W_]*i[\W_]*a','l[\W_]*a[\W_]*t[\W_]*e[\W_]*x','l[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r[\W_]*i[\W_]*e','l[\W_]*u[\W_]*b[\W_]*e','m[\W_]*i[\W_]*l[\W_]*f','m[\W_]*i[\W_]*s[\W_]*t[\W_]*r[\W_]*e[\W_]*s[\W_]*s','m[\W_]*o[\W_]*a[\W_]*n','m[\W_]*4[\W_]*m','f[\W_]*4[\W_]*m','m[\W_]*4[\W_]*f','f[\W_]*4[\W_]*f','n[\W_]*a[\W_]*k[\W_]*e[\W_]*d','n[\W_]*i[\W_]*p[\W_]*p[\W_]*l[\W_]*e[\W_]*s','n[\W_]*u[\W_]*d[\W_]*e','o[\W_]*r[\W_]*g[\W_]*a[\W_]*s[\W_]*m','o[\W_]*r[\W_]*g[\W_]*y','p[\W_]*e[\W_]*g[\W_]*g[\W_]*i[\W_]*n[\W_]*g','p[\W_]*e[\W_]*n[\W_]*e[\W_]*t[\W_]*r[\W_]*a[\W_]*t[\W_]*i[\W_]*o[\W_]*n','p[\W_]*e[\W_]*n[\W_]*i[\W_]*s','p[\W_]*h[\W_]*a[\W_]*l[\W_]*l[\W_]*u[\W_]*s','p[\W_]*o[\W_]*r[\W_]*n','p[\W_]*r[\W_]*o[\W_]*s[\W_]*t[\W_]*a[\W_]*t[\W_]*e','p[\W_]*u[\W_]*s[\W_]*s[\W_]*y','q[\W_]*u[\W_]*i[\W_]*c[\W_]*k[\W_]*i[\W_]*e','r[\W_]*a[\W_]*p[\W_]*e','r[\W_]*i[\W_]*m[\W_]*j[\W_]*o[\W_]*b','r[\W_]*o[\W_]*u[\W_]*g[\W_]*h[\W_]*\s*s[\W_]*e[\W_]*x','s[\W_]*c[\W_]*i[\W_]*s[\W_]*s[\W_]*o[\W_]*r[\W_]*i[\W_]*n[\W_]*g','s[\W_]*e[\W_]*m[\W_]*e[\W_]*n','s[\W_]*e[\W_]*x','s[\W_]*e[\W_]*x[\W_]*\s*t[\W_]*a[\W_]*p[\W_]*e','s[\W_]*h[\W_]*e[\W_]*m[\W_]*a[\W_]*l[\W_]*e','s[\W_]*i[\W_]*s[\W_]*s[\W_]*y','s[\W_]*l[\W_]*u[\W_]*t','s[\W_]*m[\W_]*u[\W_]*t','s[\W_]*p[\W_]*a[\W_]*n[\W_]*k[\W_]*i[\W_]*n[\W_]*g','s[\W_]*q[\W_]*u[\W_]*i[\W_]*r[\W_]*t','s[\W_]*t[\W_]*r[\W_]*a[\W_]*p[\W_]*[\W_-]*o[\W_]*n','s[\W_]*t[\W_]*r[\W_]*i[\W_]*p','s[\W_]*u[\W_]*b[\W_]*m[\W_]*i[\W_]*s[\W_]*s[\W_]*i[\W_]*v[\W_]*e','s[\W_]*u[\W_]*c[\W_]*k[\W_]*i[\W_]*n[\W_]*g','s[\W_]*w[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r','t[\W_]*a[\W_]*b[\W_]*o[\W_]*o','t[\W_]*a[\W_]*n[\W_]*t[\W_]*r[\W_]*i[\W_]*c','t[\W_]*e[\W_]*a[\W_]*s[\W_]*e','t[\W_]*h[\W_]*r[\W_]*e[\W_]*e[\W_]*s[\W_]*o[\W_]*m[\W_]*e','t[\W_]*i[\W_]*t[\W_]*s','t[\W_]*o[\W_]*p[\W_]*l[\W_]*e[\W_]*s[\W_]*s','t[\W_]*r[\W_]*a[\W_]*n[\W_]*n[\W_]*y','u[\W_]*n[\W_]*d[\W_]*e[\W_]*r[\W_]*b[\W_]*o[\W_]*o[\W_]*b','u[\W_]*p[\W_]*s[\W_]*k[\W_]*i[\W_]*r[\W_]*t','v[\W_]*a[\W_]*g[\W_]*i[\W_]*n[\W_]*a','v[\W_]*i[\W_]*b[\W_]*r[\W_]*a[\W_]*t[\W_]*o[\W_]*r','v[\W_]*o[\W_]*y[\W_]*e[\W_]*u[\W_]*r','w[\W_]*e[\W_]*b[\W_]*c[\W_]*a[\W_]*m','w[\W_]*e[\W_]*t[\W_]*d[\W_]*r[\W_]*e[\W_]*a[\W_]*m','w[\W_]*h[\W_]*i[\W_]*p[\W_]*s','x[\W_]*h[\W_]*a[\W_]*m[\W_]*s[\W_]*t[\W_]*e[\W_]*r','x[\W_]*n[\W_]*x[\W_]*x','x[\W_]*x[\W_]*x','y[\W_]*i[\W_]*f[\W_]*f']
+action: remove
+comment: |
+  Your post has been removed because sexual or NSFW content is not allowed here.
+  This subreddit is for platonic, supportive conversations only. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Rule 1 — NSFW / Sexual Content (obfuscation-proof COMMENTS)
+type: comment
+body (regex): ['a[\W_]*n[\W_]*a[\W_]*l','b[\W_]*d[\W_]*s[\W_]*m','b[\W_]*b[\W_]*c','b[\W_]*l[\W_]*o[\W_]*w[\W_]*j[\W_]*o[\W_]*b','b[\W_]*o[\W_]*o[\W_]*b[\W_]*s','b[\W_]*r[\W_]*a[\W_]*z[\W_]*z[\W_]*e[\W_]*r[\W_]*s','c[\W_]*a[\W_]*m[\W_]*g[\W_]*i[\W_]*r[\W_]*l','c[\W_]*a[\W_]*m[\W_]*\s*b[\W_]*o[\W_]*y','c[\W_]*a[\W_]*m[\W_]*\s*g[\W_]*i[\W_]*r[\W_]*l','c[\W_]*o[\W_]*c[\W_]*k','c[\W_]*u[\W_]*m','c[\W_]*u[\W_]*m[\W_]*m[\W_]*i[\W_]*n[\W_]*g','c[\W_]*u[\W_]*n[\W_]*n[\W_]*i[\W_]*l[\W_]*i[\W_]*n[\W_]*g[\W_]*u[\W_]*s','d[\W_]*e[\W_]*e[\W_]*p[\W_]*t[\W_]*h[\W_]*r[\W_]*o[\W_]*a[\W_]*t','d[\W_]*i[\W_]*l[\W_]*d[\W_]*o','d[\W_]*o[\W_]*m','d[\W_]*o[\W_]*m[\W_]*i[\W_]*n[\W_]*a[\W_]*t[\W_]*r[\W_]*i[\W_]*x','e[\W_]*r[\W_]*o[\W_]*t[\W_]*i[\W_]*c','e[\W_]*s[\W_]*c[\W_]*o[\W_]*r[\W_]*t','e[\W_]*x[\W_]*h[\W_]*i[\W_]*b[\W_]*i[\W_]*t[\W_]*i[\W_]*o[\W_]*n[\W_]*i[\W_]*s[\W_]*m','f[\W_]*a[\W_]*p','f[\W_]*e[\W_]*t[\W_]*i[\W_]*s[\W_]*h','f[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r[\W_]*i[\W_]*n[\W_]*g','f[\W_]*i[\W_]*s[\W_]*t[\W_]*i[\W_]*n[\W_]*g','f[\W_]*o[\W_]*o[\W_]*t[\W_]*j[\W_]*o[\W_]*b','g[\W_]*a[\W_]*n[\W_]*g[\W_]*b[\W_]*a[\W_]*n[\W_]*g','g[\W_]*i[\W_]*m[\W_]*p','g[\W_]*l[\W_]*o[\W_]*r[\W_]*y[\W_]*h[\W_]*o[\W_]*l[\W_]*e','g[\W_]*s[\W_]*p[\W_]*o[\W_]*t','h[\W_]*a[\W_]*n[\W_]*d[\W_]*j[\W_]*o[\W_]*b','h[\W_]*e[\W_]*n[\W_]*t[\W_]*a[\W_]*i','i[\W_]*n[\W_]*c[\W_]*e[\W_]*s[\W_]*t','j[\W_]*e[\W_]*r[\W_]*k[\W_]*o[\W_]*f[\W_]*f','k[\W_]*i[\W_]*n[\W_]*k','l[\W_]*a[\W_]*b[\W_]*i[\W_]*a','l[\W_]*a[\W_]*t[\W_]*e[\W_]*x','l[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r[\W_]*i[\W_]*e','l[\W_]*u[\W_]*b[\W_]*e','m[\W_]*i[\W_]*l[\W_]*f','m[\W_]*i[\W_]*s[\W_]*t[\W_]*r[\W_]*e[\W_]*s[\W_]*s','m[\W_]*o[\W_]*a[\W_]*n','m[\W_]*4[\W_]*m','f[\W_]*4[\W_]*m','m[\W_]*4[\W_]*f','f[\W_]*4[\W_]*f','n[\W_]*a[\W_]*k[\W_]*e[\W_]*d','n[\W_]*i[\W_]*p[\W_]*p[\W_]*l[\W_]*e[\W_]*s','n[\W_]*u[\W_]*d[\W_]*e','o[\W_]*r[\W_]*g[\W_]*a[\W_]*s[\W_]*m','o[\W_]*r[\W_]*g[\W_]*y','p[\W_]*e[\W_]*g[\W_]*g[\W_]*i[\W_]*n[\W_]*g','p[\W_]*e[\W_]*n[\W_]*e[\W_]*t[\W_]*r[\W_]*a[\W_]*t[\W_]*i[\W_]*o[\W_]*n','p[\W_]*e[\W_]*n[\W_]*i[\W_]*s','p[\W_]*h[\W_]*a[\W_]*l[\W_]*l[\W_]*u[\W_]*s','p[\W_]*o[\W_]*r[\W_]*n','p[\W_]*r[\W_]*o[\W_]*s[\W_]*t[\W_]*a[\W_]*t[\W_]*e','p[\W_]*u[\W_]*s[\W_]*s[\W_]*y','q[\W_]*u[\W_]*i[\W_]*c[\W_]*k[\W_]*i[\W_]*e','r[\W_]*a[\W_]*p[\W_]*e','r[\W_]*i[\W_]*m[\W_]*j[\W_]*o[\W_]*b','r[\W_]*o[\W_]*u[\W_]*g[\W_]*h[\W_]*\s*s[\W_]*e[\W_]*x','s[\W_]*c[\W_]*i[\W_]*s[\W_]*s[\W_]*o[\W_]*r[\W_]*i[\W_]*n[\W_]*g','s[\W_]*e[\W_]*m[\W_]*e[\W_]*n','s[\W_]*e[\W_]*x','s[\W_]*e[\W_]*x[\W_]*\s*t[\W_]*a[\W_]*p[\W_]*e','s[\W_]*h[\W_]*e[\W_]*m[\W_]*a[\W_]*l[\W_]*e','s[\W_]*i[\W_]*s[\W_]*s[\W_]*y','s[\W_]*l[\W_]*u[\W_]*t','s[\W_]*m[\W_]*u[\W_]*t','s[\W_]*p[\W_]*a[\W_]*n[\W_]*k[\W_]*i[\W_]*n[\W_]*g','s[\W_]*q[\W_]*u[\W_]*i[\W_]*r[\W_]*t','s[\W_]*t[\W_]*r[\W_]*a[\W_]*p[\W_]*[\W_-]*o[\W_]*n','s[\W_]*t[\W_]*r[\W_]*i[\W_]*p','s[\W_]*u[\W_]*b[\W_]*m[\W_]*i[\W_]*s[\W_]*s[\W_]*i[\W_]*v[\W_]*e','s[\W_]*u[\W_]*c[\W_]*k[\W_]*i[\W_]*n[\W_]*g','s[\W_]*w[\W_]*i[\W_]*n[\W_]*g[\W_]*e[\W_]*r','t[\W_]*a[\W_]*b[\W_]*o[\W_]*o','t[\W_]*a[\W_]*n[\W_]*t[\W_]*r[\W_]*i[\W_]*c','t[\W_]*e[\W_]*a[\W_]*s[\W_]*e','t[\W_]*h[\W_]*r[\W_]*e[\W_]*e[\W_]*s[\W_]*o[\W_]*m[\W_]*e','t[\W_]*i[\W_]*t[\W_]*s','t[\W_]*o[\W_]*p[\W_]*l[\W_]*e[\W_]*s[\W_]*s','t[\W_]*r[\W_]*a[\W_]*n[\W_]*n[\W_]*y','u[\W_]*n[\W_]*d[\W_]*e[\W_]*r[\W_]*b[\W_]*o[\W_]*o[\W_]*b','u[\W_]*p[\W_]*s[\W_]*k[\W_]*i[\W_]*r[\W_]*t','v[\W_]*a[\W_]*g[\W_]*i[\W_]*n[\W_]*a','v[\W_]*i[\W_]*b[\W_]*r[\W_]*a[\W_]*t[\W_]*o[\W_]*r','v[\W_]*o[\W_]*y[\W_]*e[\W_]*u[\W_]*r','w[\W_]*e[\W_]*b[\W_]*c[\W_]*a[\W_]*m','w[\W_]*e[\W_]*t[\W_]*d[\W_]*r[\W_]*e[\W_]*a[\W_]*m','w[\W_]*h[\W_]*i[\W_]*p[\W_]*s','x[\W_]*h[\W_]*a[\W_]*m[\W_]*s[\W_]*t[\W_]*e[\W_]*r','x[\W_]*n[\W_]*x[\W_]*x','x[\W_]*x[\W_]*x','y[\W_]*i[\W_]*f[\W_]*f']
+action: remove
+comment: |
+  Your comment has been removed because sexual or NSFW content is not allowed here.
+  This subreddit is for platonic, supportive conversations only. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Rule — Trading/Scam Block (SUBMISSIONS)
+
+type: submission
+title+body (includes-word): [
+  "forex", "trade", "trading", "crypto", "cryptocurrency", "bitcoin", "btc", 
+  "signal", "signals", "profit", "profits", "hedge", "hedging",
+  "investment", "return", "returns", "mentor", "mentorship", "stock", "stocks", "option", "options", "binary", "upstock"
+]
+action: remove
+comment: |
+  Your post has been removed because trading, investment advice, or financial solicitation is not allowed here.
+  This subreddit is for supportive, safe, and platonic conversations only. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+moderators_exempt: true
+
+---
+
+#Rule — Trading/Scam Block (COMMENTS)
+
+# Rule — Trading/Scam Block (COMMENTS)
+
+type: comment
+body (includes-word): [
+  "forex", "trade", "trading", "crypto", "cryptocurrency", "bitcoin", "btc", 
+  "signal", "signals", "profit", "profits", "hedge", "hedging",
+  "investment", "return", "returns", "mentor", "mentorship", "stock", "stocks", "option", "options", "binary", "upstock"
+  
+]
+action: remove
+comment: |
+  Your comment has been removed because trading, investment advice, or financial solicitation is not allowed here.
+  This subreddit is for supportive, safe, and platonic conversations only. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+moderators_exempt: true
+
+---
+
+# Unverified email removal
+type: any
+author:
+    has_verified_email: false
+action: remove
+message: |
+    Your [{{kind}}]({{permalink}}) in /r/{{subreddit}} was automatically removed because your account does not have a verified email address. You will not be eligible to participate in our community until [your email address has been verified.](https://reddit.com/settings/account)
+action_reason: "Unverified email"
+
+---
+
+# Exact token filter - simple \b boundaries for clear matches
+type: any
+title+body (regex, includes-word):
+  - (?i)\b(?:anal|bbc|bdsm|blowjob|bondage|boobs|clit|cock|creampie|cum|cunnilingus|deepthroat|dildo|dom|erotic|escort|exhibitionism|facial|fap|fetish|fingering|fisting|footjob|gangbang|gimp|gloryhole|gspot|handjob|hentai|incest|jerkoff|kink|labia|latex|lingerie|lube|milf|mistress|moan|naked|nipple|nude|orgasm|orgy|pegging|penetration|penis|phallic|playboy|porn|pornstar|prostate|pussy|quickie|rape|rimjob|roughsex|scissoring|semen|sex|sextape|shemale|shibari|sissy|slapper|smut|snuff|spanking|sperm|squirt|strap[- ]?on|strip|submissive|sucking|suga|swinger|taboo|tantric|tease|threesome|tits|tongue|topless|tranny|underboob|feet|lick|vagina|vibrator|voyeur|webcam|wetdream|whips|xhamster|xnxx|xxx|yiff|yoni|zentai|ass|butt|cumshot|domination|bdsmplay)\b
+action: remove
+action_reason: "Explicit/adult token detected: {{match}}"
+moderators_exempt: false
+set_locked: true
+message: |
+  Your {{kind}} has been removed because it contains explicit or sexual content. This subreddit is SFW.
+
+---
+
+# Block posts indicating minors or under-18
+type: submission
+title+body (regex): ["\\b(1[2-7])\\s*[mMfF]?\\b","\\b[mMfF]\\s*(1[2-7])\\b","\\b(1[2-7])\\s*(yo|y/o|yrs?|years?)\\b","\\b(i'?m|im|i am)\\s*(1[0-7])\\b","\\bunder\\s*age\\b","\\bunder\\s*18\\b","\\bbelow\\s*18\\b","\\bnot\\s*18\\b","\\bnot\\s*of\\s*age\\b","\\bminor(s)?\\b","\\bi('?m| am) (a )?minor\\b","\\bteen(ager|age)?s?\\b","\\bhigh\\s*school\\b","\\b(middle|secondary|primary)\\s*school\\b","\\b(10th|11th|12th)\\b","\\bgrade\\s*(10|11|12)\\b","\\b(year|yr)\\s*(10|11|12)\\b","\\b(1[0-7])\\s*(yo|y/o|yrs?|years?)\\b","\\bunderaged\\b","\\b(not\\s*adult|non[-\\s]*adult)\\b"]
+action: filter
+action_reason: "Possible Minor"
+comment: |
+  Your post has been removed because our subreddit is strictly 18+.
+  We do not allow posts that indicate the user may be under 18. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+# Block comments indicating minors or under-18
+type: comment
+body (regex): ["\\b(1[2-7])\\s*[mMfF]?\\b","\\b[mMfF]\\s*(1[2-7])\\b","\\b(1[2-7])\\s*(yo|y/o|yrs?|years?)\\b","\\b(i'?m|im|i am)\\s*(1[0-7])\\b","\\bunder\\s*age\\b","\\bunder\\s*18\\b","\\bbelow\\s*18\\b","\\bnot\\s*18\\b","\\bnot\\s*of\\s*age\\b","\\bminor(s)?\\b","\\bi('?m| am) (a )?minor\\b","\\bteen(ager|age)?s?\\b","\\bhigh\\s*school\\b","\\b(middle|secondary|primary)\\s*school\\b","\\b(10th|11th|12th)\\b","\\bgrade\\s*(10|11|12)\\b","\\b(year|yr)\\s*(10|11|12)\\b","\\b(1[0-7])\\s*(yo|y/o|yrs?|years?)\\b","\\bunderaged\\b","\\b(not\\s*adult|non[-\\s]*adult)\\b"]
+action: remove
+action_reason: "Possible Minor"
+comment: |
+  Your comment has been removed because our subreddit is strictly 18+. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
+
+---
+
+#Remove link from the comments
+
+  type: any
+  url+body+title (regex): '(https?://(?![^/\s]+\.(?-i:It[ ''‘’´`]))|www\.)(?![^/\s]*\b(?<!-)(reddit\.com|redd\.it|wikipedia\.com|reddithelp\.com)\b(?!\.))[\w\.\-]+'
+  action: remove
+  set_locked: false
+  action_reason: "external link is not allowed"
+  moderators_exempt: true
+  comment: |
+    Your {{kind}} has been removed because external links are not allowed in this subreddit. Only Reddit, Redd.it, Wikipedia, and RedditHelp links are permitted.
+  comment_stickied: true
+
+---
+
+# Suicidal / self-harm detection — submissions
+type: submission
+title+body (regex): ["s[\\W_]*u[\\W_]*i[\\W_]*c[\\W_]*i[\\W_]*d[\\W_]*e","s[\\W_]*u[\\W_]*i[\\W_]*c[\\W_]*i[\\W_]*d[\\W_]*a[\\W_]*l","k[\\W_]*i[\\W_]*l[\\W_]*l[\\W_]*\\s*m[\\W_]*y[\\W_]*s[\\W_]*e[\\W_]*l[\\W_]*f","k[\\W_]*i[\\W_]*l[\\W_]*l[\\W_]*\\s*m[\\W_]*e","i[\\W_]*w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*d[\\W_]*i[\\W_]*e","i[\\W_]*w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*d[\\W_]*i[\\W_]*e","e[\\W_]*n[\\W_]*d[\\W_]*\\s*m[\\W_]*y[\\W_]*\\s*l[\\W_]*i[\\W_]*f[\\W_]*e","e[\\W_]*n[\\W_]*d[\\W_]*\\s*i[\\W_]*t[\\W_]*\\s*a[\\W_]*l[\\W_]*l","w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*d[\\W_]*i[\\W_]*e","w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*d[\\W_]*i[\\W_]*e","w[\\W_]*i[\\W_]*s[\\W_]*h[\\W_]*\\s*i[\\W_]*\\s*w[\\W_]*a[\\W_]*s[\\W_]*\\s*d[\\W_]*e[\\W_]*a[\\W_]*d","w[\\W_]*i[\\W_]*s[\\W_]*h[\\W_]*\\s*i[\\W_]*\\s*w[\\W_]*e[\\W_]*r[\\W_]*e[\\W_]*\\s*d[\\W_]*e[\\W_]*a[\\W_]*d","d[\\W_]*o[\\W_]*n[\\W_]*'?[\\W_]*t[\\W_]*\\s*w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*l[\\W_]*i[\\W_]*v[\\W_]*e","d[\\W_]*o[\\W_]*n[\\W_]*'?[\\W_]*t[\\W_]*\\s*w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*l[\\W_]*i[\\W_]*v[\\W_]*e","w[\\W_]*a[\\W_]*n[\\W_]*n[\\W_]*a[\\W_]*\\s*d[\\W_]*i[\\W_]*e","g[\\W_]*o[\\W_]*n[\\W_]*n[\\W_]*a[\\W_]*\\s*k[\\W_]*i[\\W_]*l[\\W_]*l[\\W_]*\\s*m[\\W_]*y[\\W_]*s[\\W_]*e[\\W_]*l[\\W_]*f","t[\\W_]*h[\\W_]*i[\\W_]*n[\\W_]*k[\\W_]*i[\\W_]*n[\\W_]*g[\\W_]*\\s*a[\\W_]*b[\\W_]*o[\\W_]*u[\\W_]*t[\\W_]*\\s*k[\\W_]*i[\\W_]*l[\\W_]*l[\\W_]*i[\\W_]*n[\\W_]*g[\\W_]*\\s*m[\\W_]*y[\\W_]*s[\\W_]*e[\\W_]*l[\\W_]*f","i[\\W_]*a[\\W_]*m[\\W_]*\\s*r[\\W_]*e[\\W_]*a[\\W_]*d[\\W_]*y[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*d[\\W_]*i[\\W_]*e","w[\\W_]*a[\\W_]*n[\\W_]*t[\\W_]*\\s*t[\\W_]*o[\\W_]*\\s*e[\\W_]*n[\\W_]*d[\\W_]*\\s*m[\\W_]*y[\\W_]*\\s*l[\\W_]*i[\\W_]*f[\\W_]*e"]
+action: remove
+comment: |
+  Hi u/{{author}}, I’m really sorry you’re feeling this way — you’re not alone. If you are in immediate danger or think you might act on these thoughts, please contact your local emergency services right now.
+
+  We are not trained mental health professionals and can’t provide clinical support in this community, so we have to remove this post. For international and country-specific crisis resources that can connect you with trained, immediate help, please see the r/SuicideWatch hotlines page: https://www.reddit.com/r/SuicideWatch/wiki/hotlines/
+
+  If you can, consider reaching out to a trusted friend, family member, or a local mental health professional. If you’d like, message the moderators and we’ll do our best to help point you toward resources in your country or offer a safer place to talk here. Please read [community rules](https://www.reddit.com/r/IntrovertsChat/about/rules).
+comment_stickied: true
+comment_locked: true
